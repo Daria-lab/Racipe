@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEEE3BEE257EF6AC0045E54F /* Cooker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEEE3BED257EF6AC0045E54F /* Cooker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEEE3BF4257EF6AC0045E54F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3BF2257EF6AC0045E54F /* Interface.storyboard */; };
+		CEEE3BF6257EF6B10045E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3BF5257EF6B10045E54F /* Assets.xcassets */; };
+		CEEE3BFD257EF6B10045E54F /* Cooker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEEE3C02257EF6B10045E54F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C01257EF6B10045E54F /* InterfaceController.swift */; };
+		CEEE3C04257EF6B10045E54F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */; };
+		CEEE3C06257EF6B10045E54F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C05257EF6B10045E54F /* NotificationController.swift */; };
+		CEEE3C08257EF6B10045E54F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C07257EF6B10045E54F /* ComplicationController.swift */; };
+		CEEE3C0A257EF6B40045E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3C09257EF6B40045E54F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEEE3BEF257EF6AC0045E54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEE3BE3257EF6AC0045E54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEE3BEC257EF6AC0045E54F;
+			remoteInfo = "Cooker WatchKit App";
+		};
+		CEEE3BFE257EF6B10045E54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEE3BE3257EF6AC0045E54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEEE3BFB257EF6B10045E54F;
+			remoteInfo = "Cooker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEEE3C12257EF6B40045E54F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEEE3BFD257EF6B10045E54F /* Cooker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE3C16257EF6B40045E54F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CEEE3BEE257EF6AC0045E54F /* Cooker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEEE3BE9257EF6AC0045E54F /* Cooker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cooker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE3BED257EF6AC0045E54F /* Cooker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cooker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE3BF3257EF6AC0045E54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEEE3BF5257EF6B10045E54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEE3BF7257EF6B10045E54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cooker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEE3C01257EF6B10045E54F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CEEE3C05257EF6B10045E54F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CEEE3C07257EF6B10045E54F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CEEE3C09257EF6B40045E54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEE3C0B257EF6B40045E54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE3C0C257EF6B40045E54F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEE3BF9257EF6B10045E54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEEE3BE2257EF6AC0045E54F = {
+			isa = PBXGroup;
+			children = (
+				CEEE3BF1257EF6AC0045E54F /* Cooker WatchKit App */,
+				CEEE3C00257EF6B10045E54F /* Cooker WatchKit Extension */,
+				CEEE3BEA257EF6AC0045E54F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEE3BEA257EF6AC0045E54F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE3BE9257EF6AC0045E54F /* Cooker.app */,
+				CEEE3BED257EF6AC0045E54F /* Cooker WatchKit App.app */,
+				CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEE3BF1257EF6AC0045E54F /* Cooker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE3BF2257EF6AC0045E54F /* Interface.storyboard */,
+				CEEE3BF5257EF6B10045E54F /* Assets.xcassets */,
+				CEEE3BF7257EF6B10045E54F /* Info.plist */,
+			);
+			path = "Cooker WatchKit App";
+			sourceTree = "<group>";
+		};
+		CEEE3C00257EF6B10045E54F /* Cooker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE3C01257EF6B10045E54F /* InterfaceController.swift */,
+				CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */,
+				CEEE3C05257EF6B10045E54F /* NotificationController.swift */,
+				CEEE3C07257EF6B10045E54F /* ComplicationController.swift */,
+				CEEE3C09257EF6B40045E54F /* Assets.xcassets */,
+				CEEE3C0B257EF6B40045E54F /* Info.plist */,
+				CEEE3C0C257EF6B40045E54F /* PushNotificationPayload.apns */,
+			);
+			path = "Cooker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEE3BE8257EF6AC0045E54F /* Cooker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE3C17257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker" */;
+			buildPhases = (
+				CEEE3BE7257EF6AC0045E54F /* Resources */,
+				CEEE3C16257EF6B40045E54F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEE3BF0257EF6AC0045E54F /* PBXTargetDependency */,
+			);
+			name = Cooker;
+			productName = Cooker;
+			productReference = CEEE3BE9257EF6AC0045E54F /* Cooker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CEEE3BEC257EF6AC0045E54F /* Cooker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE3C13257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker WatchKit App" */;
+			buildPhases = (
+				CEEE3BEB257EF6AC0045E54F /* Resources */,
+				CEEE3C12257EF6B40045E54F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEEE3BFF257EF6B10045E54F /* PBXTargetDependency */,
+			);
+			name = "Cooker WatchKit App";
+			productName = "Cooker WatchKit App";
+			productReference = CEEE3BED257EF6AC0045E54F /* Cooker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CEEE3BFB257EF6B10045E54F /* Cooker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEE3C0F257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker WatchKit Extension" */;
+			buildPhases = (
+				CEEE3BF8257EF6B10045E54F /* Sources */,
+				CEEE3BF9257EF6B10045E54F /* Frameworks */,
+				CEEE3BFA257EF6B10045E54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cooker WatchKit Extension";
+			productName = "Cooker WatchKit Extension";
+			productReference = CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEE3BE3257EF6AC0045E54F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CEEE3BE8257EF6AC0045E54F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CEEE3BEC257EF6AC0045E54F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CEEE3BFB257EF6B10045E54F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = CEEE3BE6257EF6AC0045E54F /* Build configuration list for PBXProject "Cooker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEE3BE2257EF6AC0045E54F;
+			productRefGroup = CEEE3BEA257EF6AC0045E54F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEE3BE8257EF6AC0045E54F /* Cooker */,
+				CEEE3BEC257EF6AC0045E54F /* Cooker WatchKit App */,
+				CEEE3BFB257EF6B10045E54F /* Cooker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEE3BE7257EF6AC0045E54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE3BEB257EF6AC0045E54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE3BF6257EF6B10045E54F /* Assets.xcassets in Resources */,
+				CEEE3BF4257EF6AC0045E54F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEEE3BFA257EF6B10045E54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE3C0A257EF6B40045E54F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEE3BF8257EF6B10045E54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEE3C06257EF6B10045E54F /* NotificationController.swift in Sources */,
+				CEEE3C08257EF6B10045E54F /* ComplicationController.swift in Sources */,
+				CEEE3C04257EF6B10045E54F /* ExtensionDelegate.swift in Sources */,
+				CEEE3C02257EF6B10045E54F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEEE3BF0257EF6AC0045E54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEE3BEC257EF6AC0045E54F /* Cooker WatchKit App */;
+			targetProxy = CEEE3BEF257EF6AC0045E54F /* PBXContainerItemProxy */;
+		};
+		CEEE3BFF257EF6B10045E54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEEE3BFB257EF6B10045E54F /* Cooker WatchKit Extension */;
+			targetProxy = CEEE3BFE257EF6B10045E54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEEE3BF2257EF6AC0045E54F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEE3BF3257EF6AC0045E54F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEE3C0D257EF6B40045E54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEEE3C0E257EF6B40045E54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEE3C10257EF6B40045E54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cooker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		CEEE3C11257EF6B40045E54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cooker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		CEEE3C14257EF6B40045E54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Cooker_WatchKit_Extension;
+				INFOPLIST_FILE = "Cooker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		CEEE3C15257EF6B40045E54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Cooker_WatchKit_Extension;
+				INFOPLIST_FILE = "Cooker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		CEEE3C18257EF6B40045E54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEEE3C19257EF6B40045E54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rabota3.Cooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEE3BE6257EF6AC0045E54F /* Build configuration list for PBXProject "Cooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE3C0D257EF6B40045E54F /* Debug */,
+				CEEE3C0E257EF6B40045E54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE3C0F257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE3C10257EF6B40045E54F /* Debug */,
+				CEEE3C11257EF6B40045E54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE3C13257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE3C14257EF6B40045E54F /* Debug */,
+				CEEE3C15257EF6B40045E54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEE3C17257EF6B40045E54F /* Build configuration list for PBXNativeTarget "Cooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEE3C18257EF6B40045E54F /* Debug */,
+				CEEE3C19257EF6B40045E54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEE3BE3257EF6AC0045E54F /* Project object */;
+}
