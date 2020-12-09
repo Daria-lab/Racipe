@@ -11,11 +11,13 @@
 		CEEE3BF4257EF6AC0045E54F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3BF2257EF6AC0045E54F /* Interface.storyboard */; };
 		CEEE3BF6257EF6B10045E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3BF5257EF6B10045E54F /* Assets.xcassets */; };
 		CEEE3BFD257EF6B10045E54F /* Cooker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CEEE3C02257EF6B10045E54F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C01257EF6B10045E54F /* InterfaceController.swift */; };
+		CEEE3C02257EF6B10045E54F /* TableRecipesIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C01257EF6B10045E54F /* TableRecipesIC.swift */; };
 		CEEE3C04257EF6B10045E54F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */; };
 		CEEE3C06257EF6B10045E54F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C05257EF6B10045E54F /* NotificationController.swift */; };
 		CEEE3C08257EF6B10045E54F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C07257EF6B10045E54F /* ComplicationController.swift */; };
 		CEEE3C0A257EF6B40045E54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEE3C09257EF6B40045E54F /* Assets.xcassets */; };
+		CEEE3C2125801A940045E54F /* RowTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C2025801A940045E54F /* RowTable.swift */; };
+		CEEE3C2A25802C3C0045E54F /* DetailRecipeICInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE3C2925802C3C0045E54F /* DetailRecipeICInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,13 +69,16 @@
 		CEEE3BF5257EF6B10045E54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEE3BF7257EF6B10045E54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEE3BFC257EF6B10045E54F /* Cooker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cooker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEEE3C01257EF6B10045E54F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CEEE3C01257EF6B10045E54F /* TableRecipesIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRecipesIC.swift; sourceTree = "<group>"; };
 		CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		CEEE3C05257EF6B10045E54F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		CEEE3C07257EF6B10045E54F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		CEEE3C09257EF6B40045E54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEE3C0B257EF6B40045E54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEE3C0C257EF6B40045E54F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEEE3C2025801A940045E54F /* RowTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTable.swift; sourceTree = "<group>"; };
+		CEEE3C2525801C2C0045E54F /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		CEEE3C2925802C3C0045E54F /* DetailRecipeICInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeICInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,8 @@
 		CEEE3BE2257EF6AC0045E54F = {
 			isa = PBXGroup;
 			children = (
+				CEEE3C2925802C3C0045E54F /* DetailRecipeICInterfaceController.swift */,
+				CEEE3C2025801A940045E54F /* RowTable.swift */,
 				CEEE3BF1257EF6AC0045E54F /* Cooker WatchKit App */,
 				CEEE3C00257EF6B10045E54F /* Cooker WatchKit Extension */,
 				CEEE3BEA257EF6AC0045E54F /* Products */,
@@ -110,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEE3BF2257EF6AC0045E54F /* Interface.storyboard */,
+				CEEE3C2525801C2C0045E54F /* Recipes.swift */,
 				CEEE3BF5257EF6B10045E54F /* Assets.xcassets */,
 				CEEE3BF7257EF6B10045E54F /* Info.plist */,
 			);
@@ -119,7 +127,7 @@
 		CEEE3C00257EF6B10045E54F /* Cooker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				CEEE3C01257EF6B10045E54F /* InterfaceController.swift */,
+				CEEE3C01257EF6B10045E54F /* TableRecipesIC.swift */,
 				CEEE3C03257EF6B10045E54F /* ExtensionDelegate.swift */,
 				CEEE3C05257EF6B10045E54F /* NotificationController.swift */,
 				CEEE3C07257EF6B10045E54F /* ComplicationController.swift */,
@@ -258,8 +266,10 @@
 			files = (
 				CEEE3C06257EF6B10045E54F /* NotificationController.swift in Sources */,
 				CEEE3C08257EF6B10045E54F /* ComplicationController.swift in Sources */,
+				CEEE3C2A25802C3C0045E54F /* DetailRecipeICInterfaceController.swift in Sources */,
 				CEEE3C04257EF6B10045E54F /* ExtensionDelegate.swift in Sources */,
-				CEEE3C02257EF6B10045E54F /* InterfaceController.swift in Sources */,
+				CEEE3C02257EF6B10045E54F /* TableRecipesIC.swift in Sources */,
+				CEEE3C2125801A940045E54F /* RowTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
